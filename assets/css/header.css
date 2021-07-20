@@ -1,0 +1,31 @@
+/* =======================
+  Header
+========================= */
+header h1{
+    display: flex;
+    align-items: center;
+  }
+  header h1 span{
+      margin-left: 0.5em;
+    }
+  header #logo:hover{
+    color: #000;
+    }
+
+  header nav
+    {
+      margin: 2em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+header ul
+  {
+    list-style: none;
+    display: flex;
+  }
+  header li
+  {
+    padding: 0 1em;
+  }
