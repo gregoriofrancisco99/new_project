@@ -5,205 +5,195 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<title>Document</title>
-
-	<link rel="stylesheet" href="./assets/css/global.css" />
-	<link rel="stylesheet" href="./assets/css/index.css">
-	<link rel="stylesheet" href="./assets/css/header.css">
-	<link rel="stylesheet" href="./assets/css/footer.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<title>Schoolar WebSite</title>
 </head>
 
 <body>
 	<header>
-
-		<nav>
-
-			<a class="link" href="#" id="logo">
-				<h1>
+		<nav id='menu'>
+			<a class="link" href="#" id="homeLink">
+				<div id='logo'>
 					<img src="./assets/icons/Grupo 18.png" alt="IPAG Logo-marca">
-					<span>12ª IG - RG</span>
-				</h1>
+					<h1>12ª IG - RG</h1>
+				</div>
 			</a>
 
-			<ul>
-				<li><a class="link" href="#">Home</a></li>
-				<li><a class="link" href="#">Sobre nós</a></li>
-				<li><a class="link" href="#">Galeria</a></li>
-				<li><a class="link" href="#">Contacto</a></li>
-				<li><a class="link" href="./pages/login.html"><input type="button" value="Login" id="login_btn"></a></li>
+			<ul id='links'>
+
+				<a class="link" href="#">
+					<li></li>Sobre nós</li>
+				</a>
+				<a class="link" href="#">
+					<li></li>Galeria</li>
+				</a>
+				<a class="link" href="#">
+					<li></li>Contacto</li>
+				</a>
+				<a class="link login" href="#">
+					<button class="btn" id="login_btn">Login</button>
+				</a>
 			</ul>
 		</nav>
 
 	</header>
 
-	<div id="hero_area"></div>
-
 	<main>
-		<article>
-			<h1>Nossa história</h1>
-			<small>12ª IG - RG, ano lectivo 2020/2021</small>
+		<section>
 
-			<section id="our_story">
-				<figure>
-					<img src="./assets/icons/Grupo 18.png" alt="">
-					<figcaption>
-						<h2>Quem somos</h2>
-					</figcaption>
-				</figure>
+			<article id="aboutUs">
+				<h2>Nossa história</h2>
+				<div id="aboutWrapper">
+					<div class="about" id="our_story">
 
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nam excepturi vitae modi, harum quis facilis?
-					Aut corrupti ullam expedita soluta quisquam! Sint aperiam esse nemo tempora est ad quasi?</p>
 
-			</section>
 
-			<section id="how_began">
-				<figure>
-					<img src="./assets/icons/Shape.png" alt="">
-					<figcaption>
-						<h2>Como tudo começou</h2>
-					</figcaption>
-				</figure>
+						<h3>Quem somos</h3>
 
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nam excepturi vitae modi, harum quis facilis?
-					Aut corrupti ullam expedita soluta quisquam! Sint aperiam esse nemo tempora est ad quasi?</p>
-			</section>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nam excepturi vitae modi, harum quis
+							facilis?
+							Aut corrupti ullam expedita soluta quisquam! Sint aperiam esse nemo tempora est ad quasi?</p>
+					</div>
 
-			<span id="comercial">
-			</span>
+					<div class="about" id="how_began">
+						<h3>Como tudo começou</h3>
 
-			<section id="news">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nam excepturi vitae modi, harum quis
+							facilis?
+							Aut corrupti ullam expedita soluta quisquam! Sint aperiam esse nemo tempora est ad quasi?</p>
+					</div>
+				</div>
+			</article>
+
+			<article id="news">
 				<h2>Notícias recentes</h2>
-				<small>12ª IG - RG, ano lectivo 2020/2021</small>
 
 				<nav>
 					<ul>
-						<li><a class="link" href="" onmouseover="hover.mouseIn()">
-								<div class="caption">
+						<a class="link" href="#">
+							<li>
+								<figure>
+									<img src="./assets/img/news_1.jpg" alt="">
+									<figcaption>
+										<h3>Participação na jornada científica do IPAG</h3>
+										<p>By
+											<span class="author">José</span>
+											&VerticalBar;
+											<span class="date">12 de Março de 2021</span></p>
+									</figcaption>
+								</figure>
+							</li>
+						</a>
 
-									<figure>
-										<img src="./assets/img/news_1.jpg" alt="">
+						<a class="link" href="#">
+							<li>
+								<figure>
+									<img src="./assets/img/news_2.jpg" alt="">
 
-										<div class="fadding_caption inactive">
-											<figcaption>
-												<h3>News</h3>
-												<p>1<sup>st</sup> new</p>
-											</figcaption>
-										</div>
-									</figure>
-								</div>
-							</a></li>
+									<figcaption>
+										<h3>Apresentação dos trabalhos de PT</h3>
+										<p>By 
+											<span class="author">Márcio Manuel</span>
+											&VerticalBar;
+											<span class="date">10 de Maio  de 2021</span>
+										</p>
+									</figcaption>
+								</figure>
+							</li>
+						</a>
 
-						<li><a class="link" href="" onmouseover="hover.mouseIn()">
-								<div class="caption">
+						<a class="link" href="#">
+							<li>
+								<figure>
+									<img src="./assets/img/news_3.jpg" alt="">
 
-									<figure>
-										<img src="./assets/img/news_2.jpg" alt="">
-
-										<div class="fadding_caption inactive">
-											<figcaption>
-												<h3>News</h3>
-												<p>2<sup>nd</sup> new</p>
-											</figcaption>
-										</div>
-									</figure>
-								</div>
-							</a></li>
-
-						<li><a class="link" href="" onmouseover="hover.mouseIn()">
-								<div class="caption">
-
-									<figure>
-										<img src="./assets/img/news_3.jpg" alt="">
-
-										<div class="fadding_caption inactive">
-											<figcaption>
-												<h3>News</h3>
-												<p>3<sup>rd</sup> new</p>
-											</figcaption>
-										</div>
-									</figure>
-								</div>
-							</a></li>
+									<figcaption>
+										<h3>Campeonato desportivo do IPAG 2020/2021</h3>
+										<p>By
+											<span class="author">António Jr.</span>
+											&VerticalBar;
+											<span class="date">18 de Janeiro de 2021</span>
+										</p>
+									</figcaption>
+								</figure>
+							</li>
+						</a>
 
 				</nav>
-			</section>
-
-		</article>
+			</article>
 
 	</main>
 
-	<div class="footer" id="big_footer">
-		<div id="wrapper">
-			<section id="about">
-				<h3>Quem somos</h3>
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, animi itaque amet earum quo officia odit est
-					ducimus! Mollitia aspernatur repudiandae ducimus molestias debitis perferendis eligendi quos impedit tenetur
-					corporis.</p>
-			</section>
+	<div class="footer" id="bigFooter">
+		<article id="about">
+			<h4>Quem somos</h4>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, animi itaque amet earum quo officia odit est
+				ducimus! Mollitia aspernatur repudiandae ducimus molestias debitis perferendis eligendi quos impedit tenetur
+				corporis.</p>
+		</article>
 
-			<section id="links">
-				<nav>
-					<h3>links rápidos</h3>
-					<a class="link" href="#">Sobre nós</a>
-					<a class="link" href="#">Galeria</a>
-					<a class="link" href="#">Notícias</a>
-				</nav>
-			</section>
+		<div id="linksWrapper">
+			<article id="links">
+			<nav>
+				<h4>links rápidos</h4>
+				<a class="link" href="#">Sobre nós</a>
+				<a class="link" href="#">Galeria</a>
+				<a class="link" href="#">Notícias</a>
+			</nav>
+		</article>
 
-			<section id="social">
-				<nav>
-					<h3>Redes sociais</h3>
+		<article id="social">
+			<nav>
+				<h4>Redes sociais</h4>
 
-					<a class="link" href="#">
-						<figure>
-							<img src="./assets/icons/facebook.svg" alt="Facebook icon">
-							<figcaption>Facebook</figcaption>
-						</figure>
-					</a>
+				<a class="link" href="#">
+					<figure>
+						<img src="./assets/icons/facebook.svg" alt="Facebook icon">
+						<figcaption>Facebook</figcaption>
+					</figure>
+				</a>
 
-					<a class="link" href="#">
-						<figure>
-							<img src="./assets/icons/youtube.svg" alt="Youtube icon">
-							<figcaption>Youtube</figcaption>
-						</figure>
-					</a>
+				<a class="link" href="#">
+					<figure>
+						<img src="./assets/icons/youtube.svg" alt="Youtube icon">
+						<figcaption>Youtube</figcaption>
+					</figure>
+				</a>
 
-					<a class="link" href="#">
-						<figure>
-							<img src="./assets/icons/whatsapp.svg" alt="Whatsapp icon">
-							<figcaption>Whatsapp</figcaption>
-						</figure>
-					</a>
+				<a class="link" href="#">
+					<figure>
+						<img src="./assets/icons/whatsapp.svg" alt="Whatsapp icon">
+						<figcaption>Whatsapp</figcaption>
+					</figure>
+				</a>
 
-					<a class="link" href="#">
-						<figure>
-							<img src="./assets/icons/twitter.svg" alt="Twitter icon">
-							<figcaption>Twitter</figcaption>
-						</figure>
-					</a>
+				<a class="link" href="#">
+					<figure>
+						<img src="./assets/icons/twitter.svg" alt="Twitter icon">
+						<figcaption>Twitter</figcaption>
+					</figure>
+				</a>
 
-				</nav>
-			</section>
+			</nav>
+		</article>
 
-			<section id="team">
-				<nav>
-					<h3>Nossa equpa</h3>
-					<a class="link" href="#">Design</a>
-					<a class="link" href="#">Programação</a>
-					<a class="link" href="#">Redes</a>
-					<a class="link" href="#">Base de dados</a>
-				</nav>
-			</section>
+		<article id="team">
+			<nav>
+				<h4>Nossa equpa</h4>
+				<a class="link" href="#">Design</a>
+				<a class="link" href="#">Programação</a>
+				<a class="link" href="#">Redes</a>
+				<a class="link" href="#">Base de dados</a>
+			</nav>
+		</article>
 		</div>
 	</div>
 
 	<footer class="footer">
-		<p>Copyright &copy; 2021 12ª IG - RG (IPAG)</p>
+		<p>Copyright &copy; 2021 12ª IG - RG &lpar;IPAG&rpar;</p>
 		<p>Code by: <a class="link" href="#">DevCave</a> || <a class="link" href="#">IPAG</a></p>
 	</footer>
 
-	<script src="./assets/js/funcionality.js"></script>
 </body>
 
 </html>
